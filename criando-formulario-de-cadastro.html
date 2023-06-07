@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+    <form>
+        <section>
+            <label for="name">Nome</label>
+
+            <input
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Digite seu nome aqui..."
+                required
+            />
+        </section>
+
+        <br>
+
+        <section>
+            <label for="email">E-mail</label>
+
+            <input
+                id="mail"
+                name="email"
+                type="email"
+                placeholder="Digite seu email aqui..."
+                required
+            />
+        </section>
+    
+        <br>
+
+        <section>
+            <label for="description">O que te motivou a participar do evento?</label>
+        <br>
+
+            <textarea
+                name="description" 
+                id="description"    
+                placeholder="Descreva aqui..."
+                cols="30"
+                rows="5"
+            ></textarea>
+        </section>
+
+        <br>
+        <section>
+            <label for="module">Selecione seu módulo</label>
+        <br>
+            <select name="module" id="module" required>
+                <option value="" slected disabled>Escolher módulo</option>
+                <option value="m1">Módulo 1</option>
+                <option value="m2">Módulo 2</option>
+                <option value="m3">Módulo 3</option>
+                <option value="m4">Módulo 4</option>
+                <option value="m5">Módulo 5</option>
+                <option value="m6">Módulo 6</option>
+            </select>
+        </section>
+        
+        <br>
+
+        <section>
+            <label for="password">Cadastre uma senha</label>
+            
+            <br>
+            
+            <input
+                name="password"
+                type="password"
+                placeholder="Digite sua senha aqui..."
+                required/>
+        </section>  
+        
+        <br>
+
+        <section>
+            <label for="password-confirm">Confirme a senha</label>
+            <br>
+            <input  
+                id="password-confirm"
+                name="password-confirm"
+                type="password"
+                placeholder="Repita a senha..."
+                required/>
+        </section>
+
+        <br>
+
+        <section>
+
+            <p>Deseja recerber novidades em seu email?</p>
+
+            <label for="newletter">Sim</label>
+            <input type="radio" id="newletter" name="newletter" value="yes"/>
+
+            <label for="no-newletter">Não</label>
+            <input type="radio" id="no-newletter" name="newletter" value="no"/>
+            
+
+        </section>
+
+        <br>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
